@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CoachView.css">
+
+    <title>Coach View</title>
+  </head>
+
+  <body>
+    <div class="container-fluid" id="bg">
+
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand" id="Nav">
+
+          <a class="navbar-brand" href="#">
+            <img src="images/ColbyLogo.jpg" id="ColbyLogo" class="d-inline-block" alt="Colby Logo">
+          </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Men's Squash Team
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Women's Squash Team</a>
+              </div>
+
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="navSVG" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+        </nav>
+
+        <!-- Main Body -->
+        <div class="mainBody">
+
+          <!-- Top Row -->
+          <div class="row">
+
+            <!-- Athletes and notes -->
+            <div class="col-sm-7 overflow-auto" id="athletesList">
+              
+              <!-- Header -->
+              <div class="row" id="athleteInfoHeader"> 
+                <div class="col-1">Status</div>
+                <div class="col-3">Athlete Name</div>
+                <div class="col-2">Sleep</div>
+                <div class="col-2">Quality</div>
+                <div class="col-2">Readiness</div>
+                <div class="col-2">Calories</div>
+              
+              </div>
+              
+              <!-- List of Athletes -->
+              <ul class="list-group overflow-auto">
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo">
+                  <div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                  </div>
+                </a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>    
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+             
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+             
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+           
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+            
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              
+                <a href="#" class="list-group-item list-group-item-action" id="athleteInfo"><div class="row"> 
+                    <div class="col-1" id="athleteInsideListStatus">Clear</div>
+                    <div class="col-3" id="athleteInsideListName">Colby Athlete</div>
+                    <div class="col-2">9.0 Hrs</div>
+                    <div class="col-2">80%</div>
+                    <div class="col-2">70%</div>
+                    <div class="col-2">90%</div>
+                </div></a>
+              </ul>
+            </div>
+
+            <!-- Graphs on the right -->
+            <div class="col-sm-5" id="graphSection">
+
+              <div class="row">
+
+                <!-- Left Column -->
+                <div class="col-8 align-self-center text-center">
+                  <h3>Restfulnes</h3>
+                  <img src="images/restCoach.png" id="restCoach" class="d-inline-block" alt="Restfulnes">
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-4 align-self-center text-center">
+                  <div class="row " id="graphSectionRow">
+                    <h6>Sleep</h6>
+                    <img src="images/sleep.png" id="sleepCoach" class="mx-auto d-block" alt="Sleep">
+                  </div>
+                  <div class="row" id="graphSectionRow">
+                    <h6>Calories Intake</h6>
+                    <img src="images/calIntCoach.png" id="calCoach" class="mx-auto d-block" alt="Calories">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Row -->
+          <div class="row">
+
+            <!-- Bottom left chart -->
+            <div class="col-sm-7 text-center" id="trends">
+              <h3>Trends</h3>
+              <img src="images/trends.png" id="trendsCoach" class="mx-auto d-block" alt="Trends">
+            </div>
+
+            <!-- Bottom right summary -->
+            <div class="col-sm-5" id="summary">
+              <div class="row" id="summaryBox">
+                <div class="row" id="summaryName">Colby Athlete</div>
+                <div class="row" id="summaryStatus">This athlete is clear to play</div>
+
+                <!-- Inside the box -->
+                <div class="row" id="summaryWidgetBox">
+
+                  <!-- Top widgets -->
+                  <div class="row" id="widgetsTop">
+
+                    <!-- Inside widgets  -->
+                    <div class="col">
+                      <div class="row" id="summaryWidgetTop">
+                        <div class="col-2 align-self-center" id="summaryWidgetEmoji">😴</div>
+                        <div class="col-6 align-self-center text-left" id="summaryWidgetDes">SLEEP</div>
+                        <div class="col-4 align-self-center" id="summaryWidgetData">9hrs</div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="row" id="summaryWidget">
+                        <div class="col-2 align-self-center" id="summaryWidgetEmoji">⚡️</div>
+                        <div class="col-6 align-self-center text-left" id="summaryWidgetDes">Quality</div>
+                        <div class="col-4 align-self-center" id="summaryWidgetData">9hrs</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Bottom widgets -->
+                  <div class="row" id="widgetsBottom">
+
+                    <!-- Inside widgets  -->
+                    <div class="col">
+                      <div class="row" id="summaryWidgetTop">
+                        <div class="col-2 align-self-center" id="summaryWidgetEmoji">🌿</div>
+                        <div class="col-6 align-self-center text-left" id="summaryWidgetDes">Restfulness</div>
+                        <div class="col-4 align-self-center" id="summaryWidgetData">9hrs</div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="row" id="summaryWidget">
+                        <div class="col-2 align-self-center" id="summaryWidgetEmoji">🍗</div>
+                        <div class="col-6 align-self-center text-left" id="summaryWidgetDes">Calories</div>
+                        <div class="col-4 align-self-center" id="summaryWidgetData">9hrs</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

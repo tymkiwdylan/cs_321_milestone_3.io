@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+---------------------
+Initial Container
+---------------------
+*/
+#bg{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+}
+
+/* 
+---------------------
+Nav Bar
+---------------------
+*/
+#Nav{
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+.navbar-brand{
+    width: 13%;
+}
+#ColbyLogo{
+    width: 100%;
+    height: 100%;
+}
+#navDropdown{
+    width: 100%;
+    height: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+#navDropdown:hover{
+    background-color: #9f9c9c;
+    color: black;
+}
+.dropdown-menu {
+    left: 15%;
+    min-width: 80%;
+    text-align: center;
+  }
+#navSVG{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    color: white;
+}
+#navSVG:hover{
+    color: #9f9c9c;
+}
+
+/* 
+---------------------
+Body
+---------------------
+*/
+.mainBody{
+    height: 91%;
+    width: 99%;
+}
+
+/* 
+---------------------
+Athletes List
+---------------------
+*/
+#athletesList{
+    height: 450px;
+    background-color: rgb(24, 24, 24);
+    padding-left: 34px;
+    padding-top: 12px;
+    padding-bottom:0px;
+    padding-right: 10px;
+}
+#athleteInfo{
+    background-color: rgb(0, 0, 0);
+    border: solid white 1px;
+    color: white;
+    text-align: center;
+}
+#athleteInfo:hover{
+    background-color: #9f9c9c;
+}
+#athleteInfo:active{
+    background-color: #9f9c9c;
+}
+#athleteInfoHeader{
+    text-align: center;
+    font-weight: bolder;
+    border: solid white 4px;
+    border-radius: 5px;
+    margin: 0cm;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+}
+
+/* 
+---------------------
+Inside Athlete List
+---------------------
+*/
+#athleteInsideListName{
+    text-align: left;
+}
+#athleteInsideListStatus{
+    font-size: smaller;
+    color: greenyellow;
+}
+
+/* 
+---------------------
+Top Right Graphs Section
+---------------------
+*/
+#graphSection{
+    background-color: rgb(24, 24, 24);
+    height: 450px;
+}
+#graphSectionRow{
+    height: 225px;
+}
+#restCoach{
+    height: 90%;
+    width: 90%;
+}
+#sleepCoach{
+    height: 80%;
+    width: 90%;
+}
+#calCoach{
+    height: 80%;
+    width: 90%;
+}
+
+/* 
+---------------------
+Trends
+---------------------
+*/
+#trends{
+    height: 300px;
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    padding-left: 34px;
+}
+#trendsCoach{
+    height: 80%;
+    width: 80%;   
+}
+
+/* 
+---------------------
+Summary
+---------------------
+*/
+#summary{
+    height: 300px;
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#summaryBox{
+    padding: 20px;
+    border: solid white 4px;
+    height: 100%;
+}
+#summaryName{
+    font-weight: bolder;
+}
+#summaryStatus{
+    font-weight: lighter;
+}
+#summaryWidget{
+    width: 100%;
+    margin: 0;
+}
+#summaryWidgetEmoji{
+    padding: 0%;
+    font-size: 30px;
+}
+
+
+
+
+
