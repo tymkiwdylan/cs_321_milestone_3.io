@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Restfullness</title>
+    <title>Readiness</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
@@ -20,7 +20,8 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    
+    <link rel="shortcut icon" href="colby.svg" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
@@ -40,7 +41,7 @@
               <span class="mdi mdi-menu"></span>
             </button>
             <ul class="navbar-nav w-100">
-              <button type="button" class="btn btn-primary">Back</button>
+              <a class="btn btn-primary" href="athleteCoachView.html">Back</a>
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               
@@ -191,7 +192,7 @@
                 <div class="col-sm-6 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                          <h5>Restfullness Today</h5>
+                          <h5>Readiness Today</h5>
                           <div class="row">
                             <div class="col-8 col-sm-12 col-xl-12 my-auto">
                               <div class="d-flex d-sm-block d-md-flex align-items-center">
@@ -205,7 +206,7 @@
       const sleepChart = new Chart(ctx4, {
           type: 'doughnut',
           data: {
-              labels: ['Restfulness'],
+              labels: ['Readiness'],
               datasets: [{
                   label: '# of Votes',
                   data: [70,30],
@@ -244,7 +245,7 @@
                 <div class="col-sm-6 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Restfulness Trend</h5>
+                            <h5>Readiness Trend</h5>
                             <div class="row">
                         <div class="col-8 col-sm-12 col-xl-12 my-auto">
                           
@@ -290,10 +291,10 @@ const trendsplayer = new Chart(ctxplayer, {
             <div class="row-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Restfullness Notes</h3>
+                        <h3>Readiness Notes</h3>
                         <br>
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h4 class="mb-0"> There was an increase of restfulness today</h4>
+                          <h4 class="mb-0"> There was an increase of readiness today</h4>
                         </div>
                       
                     </div>
