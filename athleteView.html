@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Corona Admin</title>
+    <title>Athlete View</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
@@ -29,6 +29,7 @@
       
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
+
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
@@ -39,26 +40,7 @@
               <span class="mdi mdi-menu"></span>
             </button>
             <ul class="navbar-nav w-100">
-              <li class="nav-item dropdown">
-                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                  <div class="navbar-profile">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Women's Cross Country</p>
-                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-                  </div>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-            
-                  <a class="dropdown-item preview-item">
-                    
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Men's Cross Country</p>
-                    </div>
-                  </a>
-                  
-                
-                  
-                </div>
-              </li>
+              <!-- <button type="button" class="btn btn-primary">Back</button> -->
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               
@@ -197,11 +179,16 @@
             </button>
           </div>
         </nav>
+
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+
+            <!-- Top Row -->
               <div class="row">
-              <div class="col-sm-4 grid-margin">
+
+                <!-- Readiness Chart -->
+              <div class="col-sm-6 grid-margin">
                 <div class="card">
                   <div class="card-body">
                     <h5>Readiness</h5>
@@ -220,33 +207,21 @@ const ctx5 = document.getElementById('readyChart').getContext('2d');
 const readyChart = new Chart(ctx5, {
     type: 'doughnut',
     data: {
-        //labels: ['Red', 'Blue'],
+        labels: ['Readiness'],
         datasets: [{
             label: '# of Votes',
             data: [90, 10],
             backgroundColor: [
-                //'rgba(255, 99, 132, 0.2)',
-                //'rgba(255, 159, 64, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(42, 35, 45, 0.09)'
             ],
             borderColor: [
-                //'rgba(255, 99, 132, 1)',
-                //'rgba(255, 159, 64, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(0, 0, 0, 0.53)'
             ],
             hoverOffset: 1
         }]
     }
-//    ,
-//    options: {
-//        scales: {
-//            y: {
-//                beginAtZero: true
-//            }
-//        }
-//    }
 });
 </script>
                         
@@ -254,7 +229,7 @@ const readyChart = new Chart(ctx5, {
                         <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                       <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">Readiness is Increasing</h6>
-                        <p class="text-muted mb-0">Athletes may be able to handle harder workouts</p>
+                        <p class="text-muted mb-0">Athlete may be able to handle harder workouts</p>
                       </div>
                     
                     </div>
@@ -264,8 +239,10 @@ const readyChart = new Chart(ctx5, {
                   </div>
                 </div>
               </div>
-              <div class="col-sm-2 grid-margin">
+              
+              <div class="col-sm-3 grid-margin">
                   
+                <!-- Sleep chart -->
                 <div class="card">
                   <div class="card-body">
                     <h5>Sleep</h5>
@@ -282,19 +259,19 @@ const ctx4 = document.getElementById('sleepChart').getContext('2d');
 const sleepChart = new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Total', 'Light', 'Deep'],
+        labels: ['REM', 'Light', 'Deep'],
         datasets: [{
             label: '# of Votes',
             data: [6.5, 5, 1.5],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 159, 64, 0.2)',
-                'rgba(42, 35, 45, 0.09)'
+                'rgba(75, 192, 192, 0.2)',
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(255, 159, 64, 1)',
-                'rgba(0, 0, 0, 0.53)'
+                'rgba(75, 192, 192, 1)',
             ],
             hoverOffset: 1
         }]
@@ -319,11 +296,13 @@ const sleepChart = new Chart(ctx4, {
                     </div>
                   </div>
                 </div>
+
+                <!-- Quality chart -->
                   <div class='row'></div>
             <br>
                   <div class="card">
                 <div class="card-body">
-                    <h5>Recovery</h5>
+                    <h5>Quality</h5>
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-12 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
@@ -339,33 +318,21 @@ const ctx7 = document.getElementById('recChart').getContext('2d');
 const recChart = new Chart(ctx7, {
     type: 'doughnut',
     data: {
-        //labels: ['Red', 'Blue'],
+        labels: ['Qual'],
         datasets: [{
             label: '# of Votes',
             data: [90, 10],
             backgroundColor: [
-                //'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
-               // 'rgba(255, 159, 64, 0.2)',
                 'rgba(42, 35, 45, 0.09)'
             ],
             borderColor: [
-                //'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
-                //'rgba(255, 159, 64, 1)',
                 'rgba(0, 0, 0, 0.53)'
             ],
             hoverOffset: 1
         }]
     }
-//    ,
-//    options: {
-//        scales: {
-//            y: {
-//                beginAtZero: true
-//            }
-//        }
-//    }
 });
 </script>
                    
@@ -373,9 +340,11 @@ const recChart = new Chart(ctx7, {
                 </div>
                   </div>
               </div>
-              <div class="col-sm-2 grid-margin">
+              <div class="col-sm-3 grid-margin">
                 <div class="card">
                   <div class="card-body">
+
+                    <!-- Caloroes chart -->
                     <h5>Calories</h5>
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-12 my-auto">
@@ -391,31 +360,21 @@ const ctx3 = document.getElementById('calChart').getContext('2d');
 const calChart = new Chart(ctx3, {
     type: 'doughnut',
     data: {
-        //labels: ['Red', 'Blue'],
+        labels: ['Cal'],
         datasets: [{
             label: '# of Votes',
             data: [90, 10],
             backgroundColor: [
-                //'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 159, 64, 0.2)',
                 'rgba(42, 35, 45, 0.09)'
             ],
             borderColor: [
-                //'rgba(255, 99, 132, 1)',
                 'rgba(255, 159, 64, 1)',
                 'rgba(0, 0, 0, 0.53)'
             ],
             hoverOffset: 1
         }]
     }
-//    ,
-//    options: {
-//        scales: {
-//            y: {
-//                beginAtZero: true
-//            }
-//        }
-//    }
 });
 </script>
                           
@@ -425,9 +384,11 @@ const calChart = new Chart(ctx3, {
                   </div>
                 </div>
                   <br>
+
+                  <!-- HR chart -->
                   <div class="card">
                       <div class="card-body">
-                          <h5>Heart Rate</h5>
+                          <h6>Heart Rate</h6>
                           <div class="row">
                       <div class="col-8 col-sm-12 col-xl-12 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
@@ -443,267 +404,34 @@ const ctx6 = document.getElementById('hrChart').getContext('2d');
 const hrChart = new Chart(ctx6, {
     type: 'doughnut',
     data: {
-        //labels: ['Red', 'Blue'],
+        labels: ['HR'],
         datasets: [{
             label: '# of Votes',
             data: [90, 10],
             backgroundColor: [
-                //'rgba(255, 99, 132, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
-                //'rgba(255, 159, 64, 0.2)',
                 'rgba(42, 35, 45, 0.09)'
             ],
             borderColor: [
-                //'rgba(255, 99, 132, 1)',
                 'rgba(75, 192, 192, 1)',
-                //'rgba(255, 159, 64, 1)',
                 'rgba(0, 0, 0, 0.53)'
             ],
             hoverOffset: 1
         }]
     }
-//    ,
-//    options: {
-//        scales: {
-//            y: {
-//                beginAtZero: true
-//            }
-//        }
-//    }
 });
 </script>
                       </div>
                       
                   </div>
               </div>
-                  <div class="col-sm-4 grid-margin">
-                      <div class=card>
-                          <div class=card-body>
-                              <h4 class="card-title">Team Trends</h4>
-                              <canvas id="trends" width="200" height="200"></canvas>
-                      <script>
-const ctx8 = document.getElementById('trends').getContext('2d');
-const trends = new Chart(ctx8, {
-    type: 'line',
-    data: {
-        labels: ['9/4', '9/11', '9/18', '9/25', '10/2', '10/9'],
-        datasets: [{
-            label: 'Recovery',
-            data: [12, 19, 3, 5, 2, 3],
-
-            borderColor:'rgba(54, 162, 235, 1)',
-
-            borderWidth: 1
-        }, 
-//                   {
-//            label: 'Sleep',
-//            data: [40, 27, 3, 80, 52, 36],
-////            
-//            borderColor: 
-//                'rgba(255, 99, 132, 1)',
-//            borderWidth: 1
-//        }, 
-                   {
-            label: 'Calories',
-            data: [70, 60, 50, 40, 30, 20],
-//            
-            borderColor:
-                'rgba(255, 206, 86, 1)',
-                
-            borderWidth: 1
-        }, 
-//                   {
-//            label: 'Heart Rate',
-//            data: [1, 15, 33, 90,50, 33],
-////            backgroundColor: [
-////                'rgba(255, 99, 132, 0.2)',
-////                'rgba(54, 162, 235, 0.2)',
-////                'rgba(255, 206, 86, 0.2)',
-////                'rgba(75, 192, 192, 0.2)',
-////                'rgba(153, 102, 255, 0.2)',
-////                'rgba(255, 159, 64, 0.2)'
-////            ],
-//            borderColor: 
-//                
-//                'rgba(75, 192, 192, 1)',
-//            borderWidth: 1
-//        }, 
-                   {
-            label: 'Readiness',
-            data: [50, 50, 50, 50, 50, 50],
-//           
-            borderColor: 
-                
-                'rgba(153, 102, 255, 1)',
-                
-            
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
-                              
-                                  <canvas id="trends2" width="300" height="200"></canvas>
-                      <script>
-const ctx9 = document.getElementById('trends2').getContext('2d');
-const trends2 = new Chart(ctx9, {
-    type: 'bar',
-    data: {
-        labels: ['9/4', '9/11', '9/18', '9/25', '10/2', '10/9'],
-        datasets: [
-                   {
-            label: 'Sleep',
-            data: [40, 27, 3, 80, 52, 36],
-            
-            borderColor: 
-                'rgba(255, 99, 132, 1)',
-            borderWidth: 1
-        }, 
-                   
-//                   {
-//            label: 'Heart Rate',
-//            data: [1, 15, 33, 90,50, 33],
-////            backgroundColor: [
-////                'rgba(255, 99, 132, 0.2)',
-////                'rgba(54, 162, 235, 0.2)',
-////                'rgba(255, 206, 86, 0.2)',
-////                'rgba(75, 192, 192, 0.2)',
-////                'rgba(153, 102, 255, 0.2)',
-////                'rgba(255, 159, 64, 0.2)'
-////            ],
-//            borderColor: 
-//                
-//                'rgba(75, 192, 192, 1)',
-//            borderWidth: 1
-//        }, 
-                  ]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
-                            
-                          </div>
-                      </div>
-                  </div>
+                  
             </div>
             
             
             
             <div class="row ">
-              <div class="col-8 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title"> Athletes</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            
-                            <th> Name </th>
-                            <th> Readiness </th>
-                            <th> Sleep </th>
-                            <th> HR </th>
-                            <th> Calories </th>
-                            
-                            <th> Status </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            
-                            <td>
-                              
-                              <span class="pl-2">Henry Klein</span>
-                            </td>
-                            <td> 70% </td>
-                            <td> 6.25 hrs </td>
-                            <td> 45 bpm </td>
-                            <td> 103% </td>
-                            
-                            <td>
-                              <div class="badge badge-outline-success">Cleared</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            
-                            <td>
-                              
-                              <span class="pl-2">Estella Bryan</span>
-                            </td>
-                            <td> 61% </td>
-                            <td> 5.5 hrs </td>
-                            <td> 75 bpm </td>
-                            <td> 80% </td>
-                        
-                            <td>
-                              <div class="badge badge-outline-warning">Warning</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            
-                            <td>
-                              
-                              <span class="pl-2">Lucy Abbott</span>
-                            </td>
-                            <td> 77% </td>
-                            <td> 7 hrs </td>
-                            <td> 61 bpm </td>
-                            <td> 95% </td>
-                            
-                            <td>
-                              <div class="badge badge-outline-danger">Ineligible</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            
-                            <td>
-                              
-                              <span class="pl-2">Peter Gill</span>
-                            </td>
-                            <td> 80% </td>
-                            <td> 9 hrs </td>
-                            <td> 52 bpm </td>
-                            <td> 110% </td>
-                            
-                            <td>
-                              <div class="badge badge-outline-success">Cleared</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            
-                            <td>
-                              
-                              <span class="pl-2">Sallie Reyes</span>
-                            </td>
-                            <td> 75% </td>
-                            <td> 5 hrs </td>
-                            <td> 70 bpm </td>
-                            <td> 99% </td>
-                        
-                            <td>
-                              <div class="badge badge-outline-success">Cleared</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                <div class="col-md-4 grid-margin stretch-card">
+                <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                       <div class="row">
@@ -739,43 +467,18 @@ const trendsplayer = new Chart(ctxplayer, {
 
             borderWidth: 1
         }, 
-//                   {
-//            label: 'Sleep',
-//            data: [40, 27, 3, 80, 52, 36],
-////            
-//            borderColor: 
-//                'rgba(255, 99, 132, 1)',
-//            borderWidth: 1
-//        }, 
                    {
             label: 'Calories',
-            data: [70, 60, 50, 40, 30, 20],
-//            
+            data: [70, 60, 50, 40, 30, 20],           
             borderColor:
                 'rgba(255, 206, 86, 1)',
                 
             borderWidth: 1
         }, 
-//                   {
-//            label: 'Heart Rate',
-//            data: [1, 15, 33, 90,50, 33],
-////            backgroundColor: [
-////                'rgba(255, 99, 132, 0.2)',
-////                'rgba(54, 162, 235, 0.2)',
-////                'rgba(255, 206, 86, 0.2)',
-////                'rgba(75, 192, 192, 0.2)',
-////                'rgba(153, 102, 255, 0.2)',
-////                'rgba(255, 159, 64, 0.2)'
-////            ],
-//            borderColor: 
-//                
-//                'rgba(75, 192, 192, 1)',
-//            borderWidth: 1
-//        }, 
                    {
             label: 'Readiness',
             data: [50, 50, 50, 50, 50, 50],
-//           
+        
             borderColor: 
                 
                 'rgba(153, 102, 255, 1)',
@@ -800,6 +503,53 @@ const trendsplayer = new Chart(ctxplayer, {
                   </div>
                 </div>
               </div>
+
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                      <h5>Sleep</h5>
+                      <div class="row">
+                  <div class="col-8 col-sm-12 col-xl-12 my-auto">
+                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                      <h4 class="mb-0">90%</h4>
+                      <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                    </div>
+                      <br>
+                          </div>
+                      </div>
+                      <canvas id="trends2" width="200" height="150"></canvas>
+                      <script>
+const ctx9 = document.getElementById('trends2').getContext('2d');
+const trends2 = new Chart(ctx9, {
+    type: 'bar',
+    data: {
+        labels: ['9/4', '9/11', '9/18', '9/25', '10/2', '10/9'],
+        datasets: [
+                   {
+            label: 'Sleep',
+            data: [40, 27, 30, 80, 52, 36],
+            
+            borderColor: 
+                'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }, 
+                  ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+                  </div>
+                  
+              </div>
+                
+              </div>
+              
             </div>
             
           <!-- content-wrapper ends -->
