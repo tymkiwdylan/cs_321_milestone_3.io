@@ -1,11 +1,11 @@
-##CS321 - Software Engineering##
-###Milestone_3###
-###Group 2: Max Duchesne, Rosie Ingmann, Jonna Sosa, Isabella Feng, Dylan Tymkiw###
+## CS321 - Software Engineering
+### Milestone_3
+### Group 2: Max Duchesne, Rosie Ingmann, Jonna Sosa, Isabella Feng, Dylan Tymkiw
 
-####Abstract####
+#### Abstract
 For this milestone, our objective was to create static web pages using HTML and CSS, as well as working collaboratively using Gitflow. We began by meeting as a group initially to outline different workstreams for the milestone, estimating the time it would take for each task and then dividing the tasks accordingly. We created a remote repository containing a main branch and a development branch; we then cloned the repository locally to work on our pages, then pushed our pages back into the remote repository. To consolidate all of our pages successfully, we needed to deal with various merge conflicts, which required a significant amount of time to resolve.  Overall, this milestone allowed us to improve our hard skills in HTML/CSS, Gitflow, as well as our soft skills in teamwork and collaboration.
 
-####Results####
+#### Results
 Our main result from this milestone is our repository housing all of the static web pages. The repository can be accessed at https://github.com/tymkiwdylan/cs_321_milestone_3.io and the website is https://tymkiwdylan.github.io/. Below are screenshots and short descriptions of the web pages that we have created.
 
 
@@ -40,14 +40,14 @@ This page provides users with a visual representation of the athlete’s current
 **Sleep page**
 This page provides users with a visual representation of the athlete’s current sleep data in addition to their sleep trends.
 
-####Contribution List####
+#### Contribution List
 Dividing up the work was the most important, yet challenging aspect of this milestone. We got together after last week’s class and created issues that were then assigned to each member of the team. A good way to see who worked on what is by looking at the issues on our GitHub repository. The person that was responsible for most of the GitHub stuff was Dylan, he, in addition to creating the peak view, reviewed most pull requests and solved all the (annoying) merge conflicts, he also tried to be the main person when any git issues came up. Isabella developed the permission page and the login page, she also set up meeting times that helped keep the team in check. Rosie worked on the coach dashboard, as well as most of the style that you can see across our pages. In the end, she was also the one to connect pages in a way that made sense. Jonna was the one in charge of developing everything related to athletes, that includes the athlete view and the view of every individual metric that an athlete can see. Max Duchesne developed the admin view which is the view that probably took the most effort to make. 
 
-####Team Reflection####
+#### Team Reflection
 Developing new pages based on an html template was a lot of fun and we learned a lot. In order to figure out how to have nice graphs in our static website we even had to do some javascript which will definitely prove useful for later milestones. The most challenging aspect of this milestone was git, we had to spend a lot of time trying to figure out how to fix merge conflicts and how to set up git correctly in everyone’s computer. In the end, we all got significantly better at git, and this project definitely helped us grasp a much better understanding of how git workflow works and how it is useful when you make silly mistakes (i.e. the one time we deleted an entire html file).
 
 
-####Extensions####
+#### Extensions
 1. Additional web page designs/elements that look and feel professional.
 We have created pages for more specified metrics, such as restfulness page and sleep page, so users can see more detailed information.
 2. Use additional GitHub features like projects and create a burndown chart of your project. 
