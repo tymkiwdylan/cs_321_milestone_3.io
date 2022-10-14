@@ -9,35 +9,35 @@ For this milestone, our objective was to create static web pages using HTML and 
 Our main result from this milestone is our repository housing all of the static web pages. The repository can be accessed at https://github.com/tymkiwdylan/cs_321_milestone_3.io and the website is https://tymkiwdylan.github.io/. Below are screenshots and short descriptions of the web pages that we have created.<br>
 
 ![Login Page](/assets/report_images/login.png)
-**Login page** <br>
+<div align="center">**Login page** <br>
 This is the initial page that the user will interact with to sign into the athlete management system. <br>
 
 ![Admin View](/assets/report_images/admin_view.png)
-**Admin view** <br>
+<div align="center">**Admin view** <br>
 This is the page that the admin will see and use to view data on various teams, generate reports, and edit user permissions.<br>
 
 ![Athlete view coach 1](/assets/report_images/a_coach1.png)
 ![Athlete view coach 2](/assets/report_images/a_coach2.png)
-**Athlete view (coach)** <br>
+<div align="center">**Athlete view (coach)** <br>
 This is the page that the coach will have access to, providing them with visualizations for readiness, sleep, nutrition, and performance data.<br>
 ![Athlete view](/assets/report_images/a_view.png)
-**Athlete view** <br>
+<div align="center">**Athlete view** <br>
 This is the page that the athlete will see, giving them an overview of their readiness, sleep, and nutritional trends and data.<br>
 
 ![PEAK view](/assets/report_images/p_view.png)
-**PEAK view** <br>
+<div align="center">**PEAK view** <br>
 This is the page that PEAK team members will have access to, allowing them to view information on various teams, generate reports, and post notes for individual athletes.<br>
 
 ![Permissions page](/assets/report_images/p_page.png)
-**Permissions page**<br>
+<div align="center">**Permissions page**<br>
 This page will be accessible by the admin and will enable them to change permissions of individual users, create and delete users, and modify various data.<br>
 
 ![Restfulness page](/assets/report_images/r_page.png)
-**Restfulness page**<br>
+<div align="center">**Restfulness page**<br>
 This page provides users with a visual representation of the athlete’s current restfulness data in addition to their restfulness trends.<br>
 
 ![Sleep page](/assets/report_images/s_page.png)
-**Sleep page**<br>
+<div align="center">**Sleep page**<br>
 This page provides users with a visual representation of the athlete’s current sleep data in addition to their sleep trends.<br>
 
 ### Contribution List
