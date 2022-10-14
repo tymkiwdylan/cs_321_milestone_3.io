@@ -60,7 +60,7 @@ A burndown chart, one of the most common and useful Agile metrics, is created us
 ![extension 3](/assets/report_images/2_3.jpg)
 4. Write your report in Markdown as a readme file in your repository, including table images and appropriate tags and content.
 Done.
-5. Suggest your own creative extensions.
+5. Suggest your own creative extensions. 
 With technology tools such as Zoom Meeting, frequent communication, and good time management, we managed to finish this milestone by working remotely with people in different cities and countries with different time zones (i.e. Jonna is in Mexico, Isabella was in Turkey, others are in the US).
 
 
