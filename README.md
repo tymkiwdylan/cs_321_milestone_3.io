@@ -9,7 +9,7 @@ For this milestone, our objective was to create static web pages using HTML and 
 Our main result from this milestone is our repository housing all of the static web pages. The repository can be accessed at https://github.com/tymkiwdylan/cs_321_milestone_3.io and the website is https://tymkiwdylan.github.io/. Below are screenshots and short descriptions of the web pages that we have created.<br>
 
 ![Login Page](/assets/report_images/login.png)
-<div align="center" class='inBold'>Login page <br>
+<p align="center"><b>Login page</b></p> <br>
 This is the initial page that the user will interact with to sign into the athlete management system. <br>
 
 ![Admin View](/assets/report_images/admin_view.png)
