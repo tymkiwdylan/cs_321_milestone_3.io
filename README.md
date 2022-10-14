@@ -1,6 +1,6 @@
 ## CS321 - Software Engineering
-### Milestone_3
-### Group 2: Max Duchesne, Rosie Ingmann, Jonna Sosa, Isabella Feng, Dylan Tymkiw
+*Milestone_3*
+*Group 2: Max Duchesne, Rosie Ingmann, Jonna Sosa, Isabella Feng, Dylan Tymkiw*
 
 #### Abstract
 For this milestone, our objective was to create static web pages using HTML and CSS, as well as working collaboratively using Gitflow. We began by meeting as a group initially to outline different workstreams for the milestone, estimating the time it would take for each task and then dividing the tasks accordingly. We created a remote repository containing a main branch and a development branch; we then cloned the repository locally to work on our pages, then pushed our pages back into the remote repository. To consolidate all of our pages successfully, we needed to deal with various merge conflicts, which required a significant amount of time to resolve.  Overall, this milestone allowed us to improve our hard skills in HTML/CSS, Gitflow, as well as our soft skills in teamwork and collaboration.
